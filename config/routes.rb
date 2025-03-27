@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # Routes for the Movie resource:
   get("/movies/new", { :controller => "movies", :action => "new" })
   get("/movies/:path_id", controller: "movies", action: "edit")
+  get("/movies/:path_id/edit", controller: "movies", action: "edit")
 
   # CREATE
   post("/movies", { :controller => "movies", :action => "create" })
